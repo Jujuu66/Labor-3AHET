@@ -10,7 +10,18 @@ namespace _001_Schleifen
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("helloooooooooooooooooooooo Wrold");
+            int i =0;
+            Console.WriteLine("Gib einen text ein");
+            string text = Console.ReadLine();
+         
+
+            while (text.Length != i)
+            { 
+                i++;
+                Console.Write(text[text.Length - i]);
+
+            }
+
 
         }
     }
