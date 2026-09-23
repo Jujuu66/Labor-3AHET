@@ -67,6 +67,15 @@ namespace _002_Werkzeugverwaltung
 
 
         }
+
+
+        public tool(string description, int number)  //Konstruktor gleicher name wie klasse
+        { 
+        this.description = description;
+        this.number = number;
+        }
+
+
     }
 
     internal class Program
@@ -75,25 +84,11 @@ namespace _002_Werkzeugverwaltung
         {
 
             List<tool> tools = new List<tool> ();
-            tools.Add (new tool ());
-            tools.Add(new tool());
-            tools.Add(new tool());
+            tools.Add (new tool ("Schraubendreher", 67676));
+            tools.Add(new tool("Schraubendreher",234));
+            tools.Add(new tool("Wasserwaage",505));
 
 
-
-            tools[0].setDescription ("Schraubendreher");
-            tools[0].setnumber(67676);
-         
-
-            tools[1].setDescription("Schraubendreher");
-            tools[1].setnumber(12345);
-          
-
-            tools[2].setDescription("Wasserwaage");
-            tools[2].setnumber(50005);
-           
-
-            
 
 
             int i = 3;
@@ -133,9 +128,8 @@ namespace _002_Werkzeugverwaltung
                         Console.WriteLine("Gib die Seriennummer ein");
                         int numberHinzu = int.Parse(Console.ReadLine());
 
-                        tools.Add(new tool());
-                        tools[i].setDescription(stringHinzu);
-                        tools[i].setnumber(numberHinzu);
+                        tools.Add(new tool(stringHinzu, numberHinzu));
+                        
                         i++;
 
 
