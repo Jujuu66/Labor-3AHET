@@ -53,18 +53,19 @@ namespace Chess
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-             Image image = new Image();
+             Image image = new Image
             {
 
-               // Width = 100;
-              //  Height = 100;
-              //      Source = new BitmapImage(new Uri("images/Schwarz Turm.png", UriKind))
+                Width = 100,
+               Height = 100,
+                    Source = new BitmapImage(new Uri("images/Schwarz Turm.png", UriKind.Relative))
 
 
 
-            }
+            };
             
-           
+           Canvas c =(Canvas)SpielFeldVisu.Children[3];
+            c.Children.Add(image);
         }
     }
 }
