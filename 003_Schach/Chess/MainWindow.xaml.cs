@@ -58,7 +58,7 @@ namespace Chess
 
                 Width = 100,
                Height = 100,
-                    Source = new BitmapImage(new Uri("images/Schwarz Turm.png", UriKind.Relative))
+                    Source = new BitmapImage(new Uri("Images/Schwarz Turm.png", UriKind.Relative))
 
 
 

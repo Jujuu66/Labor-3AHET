@@ -9,9 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Images\Schwarz Turm.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Remove="Images\Schwarz Turm.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Schwarz Turm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
